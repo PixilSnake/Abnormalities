@@ -39,8 +39,8 @@ var showImages = function() {
   var element = document.getElementById("images");
   var start = page * 8;
   var end = start + 8;
-  if(end >= images.length) {
-    end = images.lenth - 1;
+  if(end > images.length) {
+    end = images.length;
   }
 for(var i = start; i < end; i++) {
   var path = images[i];
